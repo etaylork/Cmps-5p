@@ -1,0 +1,18 @@
+#------------------------------------------------------------------------------
+#  File3.py
+#------------------------------------------------------------------------------
+
+f = open('VectorTest.py')  # default mode is 'r' read
+content = f.read()
+f.close()
+
+print(content)
+words = content.split()
+print("There are {0} words in the file.".format(len(words)))
+words.reverse()
+words.join()
+print(words)
+
+g = open('Matrix.py.bak', 'w')
+g.write(content)
+g.close()

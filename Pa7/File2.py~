@@ -1,0 +1,11 @@
+f = open('VectorTest.py', 'r')
+L = f.read()
+f.close()
+
+print(L)
+#L.sort()
+
+g = open('Matrix.py.bak', 'w')
+for line in L:
+    g.write(line)
+g.close()
